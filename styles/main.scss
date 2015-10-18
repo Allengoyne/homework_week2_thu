@@ -1,0 +1,85 @@
+@import "../bower_components/normalize-css/normalize.css";
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+$visual-grid: true;
+@import "../bower_components/neat/app/assets/stylesheets/_neat.scss";
+
+body {
+  background: url(../assets/bg.jpg);
+  opacity: 50;
+  color: #fff;
+}
+main{
+  @include outer-container;
+}
+
+// Header section
+
+header{
+@include span-columns(12);
+.social-nav {
+  @include span-columns(6 of 12);
+  @include shift(6);
+
+  // .subscribe {
+  //   @include span-columns(2 of 6);
+  //   @include shift(1);
+  //   text-decoration: none;
+  //   color: #fff;
+  //   font-size: 20px;
+  // }
+}
+.subscribe {
+  @include span-columns(2 of 6);
+  @include shift(1);
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.icons{
+  @include span-columns(4 of 6);
+  @include shift(3.59);
+
+.fa {
+  font-size: 60px;
+}
+
+.fa-facebook-square {
+  color: #38559E;
+}
+.fa-rss-square {
+  color: #E15A00;
+}
+.fa-twitter-square {
+  color: #7AC3F6;
+}
+.fa-youtube-square{
+  color: #E64A41;
+  }
+}
+
+.page-menu {
+  @include span-columns(12);
+}
+nav{
+ li {
+  @include span-columns(3 of 12);
+    list-style-type: none;
+    background: #B4292E;
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align: center;
+    }
+  }
+}
+
+// Hero section
+
+.hero {
+  @include span-columns(12);
+  margin: 15px;
+  border: 10px solid #fff;
+img {
+  width: 100%;
+}
+}
