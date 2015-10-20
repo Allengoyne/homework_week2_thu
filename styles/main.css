@@ -63,15 +63,17 @@ header {
     margin-left: 17.47153%;
     text-decoration: none;
     color: #fff;
-    font-size: 20px; }
+    font-size: 20px;
+    line-height: 50px;
+    padding-top: 10px; }
     header .subscribe:last-child {
       margin-right: 0; }
   header .icons {
     float: left;
     display: block;
     margin-right: 4.82916%;
-    width: 65.05695%;
-    margin-left: 62.72278%; }
+    width: 47.58542%;
+    text-align: right; }
     header .icons:last-child {
       margin-right: 0; }
     header .icons .fa {
@@ -91,6 +93,14 @@ header {
     width: 100%; }
     header .page-menu:last-child {
       margin-right: 0; }
+  header ul {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding: 0px; }
+    header ul:last-child {
+      margin-right: 0; }
   header nav li {
     float: left;
     display: block;
@@ -109,9 +119,63 @@ header {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  margin: 15px;
   border: 10px solid #fff; }
   .hero:last-child {
     margin-right: 0; }
   .hero img {
     width: 100%; }
+
+.radio-btn {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-left: 42.64902%;
+  display: inline-block; }
+  .radio-btn:last-child {
+    margin-right: 0; }
+  .radio-btn .button {
+    padding: 15px; }
+
+.story {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-color: #fff;
+  color: #000;
+  padding: 10px; }
+  .story:last-child {
+    margin-right: 0; }
+  .story h1 {
+    font-size: 25px;
+    font-weight: normal; }
+  .story h3 {
+    font-size: 12px;
+    color: #929292; }
+  .story p {
+    font-size: 10px; }
+  .story a {
+    margin-left: 29.85432%;
+    text-decoration: none;
+    color: red; }
+
+.featured {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .featured:last-child {
+    margin-right: 0; }
+
+figure {
+  margin: 0; }
+
+figure img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  border: 5px solid #fff; }
+  figure img:last-child {
+    margin-right: 0; }

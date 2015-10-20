@@ -7,9 +7,11 @@ body {
   background: url(../assets/bg.jpg);
   opacity: 50;
   color: #fff;
+
 }
 main{
   @include outer-container;
+
 }
 
 // Header section
@@ -34,11 +36,14 @@ header{
   text-decoration: none;
   color: #fff;
   font-size: 20px;
+  line-height: 50px;
+  padding-top: 10px;
 }
 
 .icons{
-  @include span-columns(4 of 6);
-  @include shift(3.59);
+  @include span-columns(3 of 6);
+  // @include shift(3.59);
+  text-align: right;
 
 .fa {
   font-size: 60px;
@@ -60,8 +65,14 @@ header{
 
 .page-menu {
   @include span-columns(12);
+  }
+ul {
+  @include span-columns(12);
+  padding: 0px;
 }
+
 nav{
+
  li {
   @include span-columns(3 of 12);
     list-style-type: none;
@@ -77,9 +88,56 @@ nav{
 
 .hero {
   @include span-columns(12);
-  margin: 15px;
   border: 10px solid #fff;
 img {
   width: 100%;
 }
+}
+
+.radio-btn {
+  @include span-columns(12);
+  @include shift(5);
+  display: inline-block;
+  .button {
+    padding: 15px;
+  }
+  // Blog Posts
+}
+.story {
+  @include span-columns(4 of 12);
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+h1 {
+  font-size: 25px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 12px;
+  color: #929292;
+}
+p {
+  font-size: 10px;
+}
+  a {
+    @include shift(3.5);
+    text-decoration: none;
+    color: red;
+  }
+}
+
+// Skaters
+
+.featured {
+  @include span-columns(12);
+}
+figure {
+  margin: 0;
+
+}
+
+figure img {
+  @include span-columns(4 of 12);
+
+  border: 5px solid #fff;
 }
